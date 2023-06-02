@@ -1,0 +1,346 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Form1'
+  ClientHeight = 503
+  ClientWidth = 501
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object sButton1: TsButton
+    Left = 0
+    Top = 0
+    Width = 125
+    Height = 125
+    Cursor = crHandPoint
+    Caption = '99'
+    DoubleBuffered = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlue
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold, fsItalic]
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 0
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object sButton2: TsButton
+    Tag = 1
+    Left = 125
+    Top = 0
+    Width = 125
+    Height = 125
+    Cursor = crHandPoint
+    Caption = '99'
+    DoubleBuffered = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlue
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold, fsItalic]
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 1
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object sButton3: TsButton
+    Tag = 2
+    Left = 250
+    Top = 0
+    Width = 125
+    Height = 125
+    Cursor = crHandPoint
+    Caption = '99'
+    DoubleBuffered = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlue
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold, fsItalic]
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 2
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object sButton4: TsButton
+    Tag = 3
+    Left = 375
+    Top = 0
+    Width = 125
+    Height = 125
+    Cursor = crHandPoint
+    Caption = '99'
+    DoubleBuffered = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlue
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold, fsItalic]
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 3
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object sButton5: TsButton
+    Tag = 4
+    Left = 0
+    Top = 125
+    Width = 125
+    Height = 125
+    Cursor = crHandPoint
+    Caption = '99'
+    DoubleBuffered = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlue
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold, fsItalic]
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 4
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object sButton6: TsButton
+    Tag = 5
+    Left = 125
+    Top = 125
+    Width = 125
+    Height = 125
+    Cursor = crHandPoint
+    Caption = '99'
+    DoubleBuffered = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlue
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold, fsItalic]
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 5
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object sButton7: TsButton
+    Tag = 6
+    Left = 250
+    Top = 125
+    Width = 125
+    Height = 125
+    Cursor = crHandPoint
+    Caption = '99'
+    DoubleBuffered = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlue
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold, fsItalic]
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 6
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object sButton8: TsButton
+    Tag = 7
+    Left = 375
+    Top = 125
+    Width = 125
+    Height = 125
+    Cursor = crHandPoint
+    Caption = '99'
+    DoubleBuffered = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlue
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold, fsItalic]
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 7
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object sButton9: TsButton
+    Tag = 8
+    Left = 0
+    Top = 250
+    Width = 125
+    Height = 125
+    Cursor = crHandPoint
+    Caption = '99'
+    DoubleBuffered = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlue
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold, fsItalic]
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 8
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object sButton10: TsButton
+    Tag = 9
+    Left = 125
+    Top = 250
+    Width = 125
+    Height = 125
+    Cursor = crHandPoint
+    Caption = '99'
+    DoubleBuffered = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlue
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold, fsItalic]
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 9
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object sButton11: TsButton
+    Tag = 10
+    Left = 250
+    Top = 250
+    Width = 125
+    Height = 125
+    Cursor = crHandPoint
+    Caption = '99'
+    DoubleBuffered = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlue
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold, fsItalic]
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 10
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object sButton12: TsButton
+    Tag = 11
+    Left = 375
+    Top = 250
+    Width = 125
+    Height = 125
+    Cursor = crHandPoint
+    Caption = '99'
+    DoubleBuffered = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlue
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold, fsItalic]
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 11
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object sButton13: TsButton
+    Tag = 12
+    Left = 0
+    Top = 375
+    Width = 125
+    Height = 125
+    Cursor = crHandPoint
+    Caption = '99'
+    DoubleBuffered = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlue
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold, fsItalic]
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 12
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object sButton14: TsButton
+    Tag = 13
+    Left = 125
+    Top = 375
+    Width = 125
+    Height = 125
+    Cursor = crHandPoint
+    Caption = '99'
+    DoubleBuffered = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlue
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold, fsItalic]
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 13
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object sButton15: TsButton
+    Tag = 14
+    Left = 250
+    Top = 375
+    Width = 125
+    Height = 125
+    Cursor = crHandPoint
+    Caption = '99'
+    DoubleBuffered = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlue
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold, fsItalic]
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 14
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object sButton16: TsButton
+    Tag = 15
+    Left = 375
+    Top = 375
+    Width = 125
+    Height = 125
+    Cursor = crHandPoint
+    Caption = '99'
+    DoubleBuffered = True
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBlue
+    Font.Height = -48
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold, fsItalic]
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 15
+    SkinData.SkinSection = 'BUTTON'
+  end
+  object MainMenu1: TMainMenu
+    Left = 352
+    Top = 88
+    object N1: TMenuItem
+      Caption = 'NewGame'
+      OnClick = N1Click
+    end
+    object N2: TMenuItem
+      Caption = '          '
+      Visible = False
+    end
+    object S1: TMenuItem
+      Caption = 'Score:'
+    end
+    object N3: TMenuItem
+      Caption = '                      '
+      Visible = False
+    end
+    object E1: TMenuItem
+      Caption = 'Exit'
+      OnClick = E1Click
+    end
+  end
+end

@@ -1,0 +1,139 @@
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Menus, StdCtrls, sButton;
+
+type
+  TForm1 = class(TForm)
+    sButton1: TsButton;
+    MainMenu1: TMainMenu;
+    E1: TMenuItem;
+    sButton2: TsButton;
+    sButton3: TsButton;
+    sButton4: TsButton;
+    sButton5: TsButton;
+    sButton6: TsButton;
+    sButton7: TsButton;
+    sButton8: TsButton;
+    sButton9: TsButton;
+    sButton10: TsButton;
+    sButton11: TsButton;
+    sButton12: TsButton;
+    sButton13: TsButton;
+    sButton14: TsButton;
+    sButton15: TsButton;
+    sButton16: TsButton;
+    N1: TMenuItem;
+    N2: TMenuItem;
+    S1: TMenuItem;
+    N3: TMenuItem;
+    procedure E1Click(Sender: TObject);
+    procedure N1Click(Sender: TObject);
+    procedure newGame;
+    procedure drwButton;
+    procedure FormCreate(Sender: TObject);
+    procedure sButton1Click(Sender: TObject);
+    function findNiltag: integer;
+    function CheckWin: boolean;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  matrix: array [0 .. 15] of byte;
+  score: integer;
+
+implementation
+
+{$R *.dfm}
+
+function TForm1.CheckWin: boolean;
+begin
+  result := false;
+  if matrix[15] <> 0 then
+    exit;
+  result := true;
+end;
+
+procedure TForm1.drwButton;
+var
+  tg, i: integer;
+begin
+  for i := 0 to Form1.ComponentCount - 1 do
+  begin
+    if Form1.Components[i] is TsButton then
+    begin
+      tg := (Form1.Components[i] as TsButton).Tag;
+      (Form1.Components[i] as TsButton).Caption := inttostr(matrix[tg]);
+      (Form1.Components[i] as TsButton).Visible := boolean(matrix[tg] <> 0);
+    end;
+  end;
+  S1.Caption := 'Score: ' + inttostr(score);
+  if CheckWin then
+    showmessage('You Win' + #13 + 'Your Score:' + inttostr(score));
+
+end;
+
+procedure TForm1.E1Click(Sender: TObject);
+begin
+  application.Terminate;
+end;
+
+function TForm1.findNiltag: integer;
+var
+  i: integer;
+begin
+  result := -1;
+  for i := 0 to 15 do
+    if matrix[i] = 0 then
+      result := i;
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  newGame;
+end;
+
+procedure TForm1.N1Click(Sender: TObject);
+begin
+  newGame;
+end;
+
+procedure TForm1.newGame;
+var
+  r, i: integer;
+  t: byte;
+begin
+  score := 0;
+  randomize;
+  for i := 0 to 15 do
+    matrix[i] := i;
+  for i := 0 to 15 do
+  begin
+    r := random(16);
+    t := matrix[i];
+    matrix[i] := matrix[r];
+    matrix[r] := t;
+  end;
+  drwButton;
+end;
+
+procedure TForm1.sButton1Click(Sender: TObject);
+var
+  nl, tg: integer;
+begin
+  tg := (Sender as TsButton).Tag;
+  nl := findNiltag;
+  matrix[nl] := matrix[tg];
+  matrix[tg] := 0;
+  inc(score);
+  drwButton;
+end;
+
+end.
